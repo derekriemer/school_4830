@@ -8,6 +8,7 @@
 .phone-button {
     padding:200px;
 }
-div.pad{
-    width: 100%;
+div.row{
+    clear:both;
+    padding:200px;
 }
