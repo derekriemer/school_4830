@@ -6,7 +6,6 @@ function hideInertTabs(evt){
     let id = evt.target.id;
     $("[role=tab]").each(function(index, elem){
         let panelId = morfTabToPanel(elem.id);
-        console.log($("#"+panelId));
         if(elem.id == id){
             $(elem).attr("aria-selected", "true");
             $("#"+panelId).show();
@@ -19,4 +18,6 @@ function hideInertTabs(evt){
 
 $(document).ready(function() {
     $("[role=tab]").click(hideInertTabs);
+    //Dirty red hack, we pass the tab a fake event with only the necessary properties.
+    hideInertTabs({"target": {"id": "tab-pad"}});
 });
