@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>My Test Blog</title>
+</head>
+<body>
+    <div class="navbar-nav">
+        <nav>
+            <ul>
+                <li><a href="https://derekriemer.com">About Me</a></li>
+                <li> <a href="archives.htm">Archives</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="container" class="container" role="main">
+        <div class="row">
+            <h1>A fun little math problem, my friends!</h1>
+            <h2> First things first</h2>
+            Hello friends, Today I'll start out withh a photo of me skiing a couple of years ago at Winter park. 
+            <figure>
+                <img src="derek-skiing.jpg" alt="A skiier at the top of a very steep incline with lots of trees."/>
+                <figcaption>
+                    Derek Riemer skiing  Pine Cliffs at Winter Park Resort, Colorado.
+                </figcaption>
+            </figure>
+            <h2>Now, get your math hats on</h2>
+            <p>
+                This problem is Archived from my blog a couple of years ago. For those who enjoy a math problem to finish off a great day on this planet, here is a problem for you. I randomly came up with it while watching the democratic debate last night (must have been bored).  It is two problems, the second one follows from the first.
+                Here are the Problem statements!
+                Suppose you owe me money from a recent lone. Your unfortunate situation lets me demand money from you in either one of two ways. You get the choice to choose one of them .
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Option</th>
+                        <th>Option verbage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Option 1:</th>
+                        <td>You pay me 1 dollar a day for $$n$$ days.</td>
+                    </tr>
+                    <tr>
+                        <th>Option 2:</th>
+                        <td>You pay me 0 cents today (day 1), 1 cent tomorrow (day 2), $$0+1+2$$ cents on day 3, $$0 + 1 + \dots + i + \dots +(n-1)$$ cents on day n.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h4>The dilemma:</h4>
+            <ol>
+                <li>                : At what day does it become not profitable for you to pay me with option two.</li>
+                <li>Additionally, create an expression to tell me how much money I will profit if you pick option 2. Hint: Negative profits for days 1 and so on, are possible until the day when statement 1 above is true.</li>
+            </ol>
+            <p>
+                Now, Problem statement for problem 2!
+                Suppose you owe me money from a recent lone. Your unfortunate situation lets me demand money from you in either one of two ways. You get the choice to choose one of them .
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>   Option Number</th>
+                        <th>Option verbage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Option 1:</th>
+                        <td>You pay me $$x$$ dollar a day for $$n$$ days.</td>
+                    </tr>
+                    <tr>
+                        <th>Option 2.</th>
+                        <td>You pay me 0 cents today (day 1), 1 cent tomorrow (day 2), $$0+1+2$$ cents on day 3, $$0+1+ \dots +i+ \dots +(m-1)$$ cents on day m.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+                The dilemma:
+                Find an equation for x and n that calculates what day it becomes not profitable for you to pay me with option two (in other words, figure out which day $$nx = m$$). Additionally, create an expression to tell me how much money I will profit if you pick option 2. Hint: Negative profits for days 1 and so on, are possible until the day where $$mx = n$$.
+            </p>
+        </div>
+        <div class="row">
+            <div class="alert alert-info" role="alert" style="display:none;" id="alert">
+                Lucky day! I'm busy collecting a debt payment from a very wealthy man on unfortunate terms. He decided to pay me over 40 years using option 2.
+            </div>
+        </div>
+        <div class="row">
+            <div role="form" aria-labelledby="dcr" class="form">
+                <h2 id="dcr">Comments are disabled here, but you can submit your name for debt collection below.</h2>
+                <div class="col">
+                    <label for="name">
+                        Name:                  
+                    </label>
+                    <input type="text" id="name"/>
+                </div>
+                <div class="col">
+                    <label for="yes">
+                        I'd choose option two.
+                    </label>
+                    <input type="checkbox" checked id="yes"/>
+                </div>
+                <div class="col">
+                    <button onclick="document.getElementById('alert').style.display='block'">Submit to my debt scheme.</button>
+                </div>
+            </div>
+        </div>
+        <footer role="contentinfo">
+            Site Copyright &copy Derek Riemer (The most crafty debt collection scam artist in the world), 2018. I don't persue debt payments often, but when I do, I prefer them slowly. Stay wealthy my friends.
+        </div>
+    </div>
+</body>
+</html>
