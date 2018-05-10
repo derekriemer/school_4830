@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+	<head>
+		<title>
+			Calculator Demo
+		</title>
+		<link rel="stylesheet" href="calculator.css" type="text/css">
+	</head>
+	<body>
+		<div id="calculator">
+			<h1>calc U l8r</h1>
+			<div class="calculator_row">
+				<input id="number_input" aria-live="polite">
+			</div>
+            <div class="calculator_row">
+              <span id="statusarea" aria-live="polite"></span>
+            </div>
+			<div class="calculator_row">
+				<button id="button7" class="calcButton row1 col1">7</button>
+				<button id="button8" class="calcButton row1 col2">8</button>
+				<button id="button9" class="calcButton row1 col3">9</button>
+				<button id="buttonDivide" class="calcButton row1 col4 function">/</button>
+			</div>
+			<div class="calculator_row">
+				<button id="button4" class="calcButton row2 col1">4</button>
+				<button id="button5" class="calcButton row2 col2">5</button>
+				<button id="button6" class="calcButton row2 col3">6</button>
+				<button id="buttonMultiply" class="calcButton row2 col4 function">*</button>
+			</div>
+			<div class="calculator_row">
+				<button id="button1" class="calcButton row3 col1">1</button>
+				<button id="button2" class="calcButton row3 col2">2</button>
+				<button id="button3" class="calcButton row3 col3">3</button>
+				<button id="buttonAdd" class="calcButton row3 col4 function">+</button>
+			</div>
+			<div class="calculator_row">
+				<button id="button0" class="calcButton row4 col1">0</button>
+				<button id="buttonClear" class="calcButton row4 col2 meta">C</button>
+				<button id="buttonEquals" class="calcButton row4 col3 meta">=</button>
+				<button id="buttonSubtract" class="calcButton row4 col4 function">-</button>
+			</div>
+		</div>
+		<div id="comments">
+			<h2>About this app</h2>
+			<p>Include information here about your app.</p>
+			<ul>
+				<li><p>
+        Get a Makey Makey, and attach a clip to the left arrow. Now, attach one to the up arrow. Place them on two large targets. Now, make the user tap a target while whereing a steel or copper wire ring attached to ground. 
+        </p>
+        <p> 
+        The user should complete the following equations.
+       
+        8+9*4-9=
+        3-2-1=
+        691/8=
+        </p>
+        <p>
+         To use the makey makey to get valid input, you must place a body part on an object. That will activate the key. Each switch can be on or off, and turning one on occurs after a second delay. If yu tap the switch again in that second, you'll turm the switch off which does an alternate option.
+         Switch layout is as follows.
+        </p>
+        <table>
+          <tr>
+            <th>Switch</th></thead><th>Key</th><th>on</th><th>Off</th>
+          </tr>
+          <tr>
+            <th>1</th><td>Left Arrow</td><td>Moves down or right.</td><td>Moves left or up</td>
+          </tr>
+          <tr>
+            <th>2.</th><td>Up arrow</td><td>on if 1 is in vertical mode: Toggle mode so 1 moves horizontally. on if 1 is in horizontal mode: activate key.</td><td>Off if 1 is in vertical mode activates current button. Off if 1 is in horizontal mode: go back to vertical mode.</td></tr>
+          </tr>
+        </table>
+        </li>
+				<li><a href="results.txt" target="_blank">Test results</a></li>
+				<li><p>I tried using various conducters and changing the size of targets with the makey makey. Unfortunately, I couldn't get one big enough that I didn't knock off a wire with my nose when using it. I would need to hide the wires so they can't be fiddled with, or make a proper switch.</p></li>
+			</ul>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+		<script src="calculator.js" type="text/javascript"></script>
+	</body>
+</html>
